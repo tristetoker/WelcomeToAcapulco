@@ -1,0 +1,7 @@
+Calls for Acapulco
+
+http://api.openweathermap.org/data/2.5/weather?id=3533462&APPID=13a5b3c1a3e10575551ec4b5483dc854
+
+http://api.openweathermap.org/data/2.5/forecast?id=3533462&APPID=13a5b3c1a3e10575551ec4b5483dc854
+
+http://openweathermap.org/img/w/10d.png

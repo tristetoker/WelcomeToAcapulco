@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PPK-5o-IQm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast-->
+        <scene sceneID="cWR-dZ-Bl8">
+            <objects>
+                <tableViewController id="qSq-lp-6XF" customClass="ForecastVC" customModule="WelcomeToAcapulco" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="268" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cqi-0X-K8A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="qSq-lp-6XF" id="Tm5-3a-WjH"/>
+                            <outlet property="delegate" destination="qSq-lp-6XF" id="TgB-TX-kTB"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Forecast" id="EoD-FU-woQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdi-0r-0fS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-56"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="lE7-yB-Pio">
+            <objects>
+                <viewController id="PPK-5o-IQm" customClass="HomeVC" customModule="WelcomeToAcapulco" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gl3-zQ-Zgl"/>
+                        <viewControllerLayoutGuide type="bottom" id="AXo-FQ-3uk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PPF-zv-ZUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqA-nv-N9g">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <connections>
+                                    <segue destination="qSq-lp-6XF" kind="embed" identifier="embedForecast" id="nED-yf-zzF"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Acapulco!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-Ol-WGh">
+                                <rect key="frame" x="68" y="40" width="239.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pull to refresh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6F-ra-l8Q">
+                                <rect key="frame" x="68" y="68" width="239.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kqA-nv-N9g" firstAttribute="top" secondItem="Gl3-zQ-Zgl" secondAttribute="bottom" constant="80" id="0OC-3S-Cie"/>
+                            <constraint firstItem="N6F-ra-l8Q" firstAttribute="top" secondItem="ivr-Ol-WGh" secondAttribute="bottom" constant="-1" id="1e4-ju-JDM"/>
+                            <constraint firstItem="AXo-FQ-3uk" firstAttribute="top" secondItem="kqA-nv-N9g" secondAttribute="bottom" id="MHO-OT-sQV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kqA-nv-N9g" secondAttribute="trailing" constant="-16" id="OVS-Yf-T2B"/>
+                            <constraint firstItem="ivr-Ol-WGh" firstAttribute="top" secondItem="Gl3-zQ-Zgl" secondAttribute="bottom" constant="20" id="SJx-Mw-f6c"/>
+                            <constraint firstItem="N6F-ra-l8Q" firstAttribute="width" secondItem="ivr-Ol-WGh" secondAttribute="width" id="WSY-Rb-DNq"/>
+                            <constraint firstItem="kqA-nv-N9g" firstAttribute="leading" secondItem="PPF-zv-ZUJ" secondAttribute="leadingMargin" constant="-16" id="qqJ-dF-Ghy"/>
+                            <constraint firstItem="ivr-Ol-WGh" firstAttribute="centerX" secondItem="PPF-zv-ZUJ" secondAttribute="centerX" id="rqv-Db-v5f"/>
+                            <constraint firstItem="N6F-ra-l8Q" firstAttribute="centerX" secondItem="ivr-Ol-WGh" secondAttribute="centerX" id="vdy-tj-10e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGE-OX-BHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770" y="-56"/>
+        </scene>
+    </scenes>
+</document>

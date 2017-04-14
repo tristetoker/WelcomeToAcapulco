@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4316209AA5815EB810642D2C /* Pods_WelcomeToAcapulco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17704741E96EB6B176771AA1 /* Pods_WelcomeToAcapulco.framework */; };
+		50073FDF1EA011D800BA1457 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50073FDE1EA011D800BA1457 /* HomeVC.swift */; };
+		50073FED1EA0AD4400BA1457 /* WindDirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50073FEC1EA0AD4400BA1457 /* WindDirectionTests.swift */; };
+		50073FEE1EA0AD5900BA1457 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F81E9FCE7200D074E7 /* WindDirection.swift */; };
+		500740021EA0B29800BA1457 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D721E9FCA7700640146 /* ForecastCell.swift */; };
+		500740041EA0B29800BA1457 /* NetworkSessionProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E91E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift */; };
+		500740051EA0B29800BA1457 /* NetworkRequestsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6ED1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift */; };
+		500740061EA0B29800BA1457 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F01E9FCC4000D074E7 /* NetworkManager.swift */; };
+		500740071EA0B29800BA1457 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E71E9FCB8F00D074E7 /* Forecast.swift */; };
+		500740081EA0B29800BA1457 /* NetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F41E9FCC6C00D074E7 /* NetworkResponseParser.swift */; };
+		500740091EA0B29800BA1457 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F81E9FCE7200D074E7 /* WindDirection.swift */; };
+		5007400A1EA0B29800BA1457 /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D6D1E9FC9C700640146 /* ForecastVC.swift */; };
+		5007400B1EA0B29800BA1457 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50073FDE1EA011D800BA1457 /* HomeVC.swift */; };
+		5007400C1EA0B29800BA1457 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D761E9FCAD200640146 /* NetworkManagerProtocol.swift */; };
+		5007400D1EA0B29800BA1457 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E51E9FCB7E00D074E7 /* Weather.swift */; };
+		5007400E1EA0B29800BA1457 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6FA1E9FD0CB00D074E7 /* City.swift */; };
+		5007400F1EA0B29800BA1457 /* NetworkSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F61E9FCC7800D074E7 /* NetworkSessionProvider.swift */; };
+		500740101EA0B29800BA1457 /* NetworkRequestsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F21E9FCC5A00D074E7 /* NetworkRequestsProvider.swift */; };
+		500740111EA0B29800BA1457 /* NetworkResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6EB1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift */; };
+		500740131EA0B29800BA1457 /* Pods_WelcomeToAcapulco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17704741E96EB6B176771AA1 /* Pods_WelcomeToAcapulco.framework */; };
+		500740151EA0B29800BA1457 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50977D731E9FCA7700640146 /* ForecastCell.xib */; };
+		500740161EA0B29800BA1457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508273851E9FAB70003725EA /* LaunchScreen.storyboard */; };
+		500740171EA0B29800BA1457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508273831E9FAB70003725EA /* Assets.xcassets */; };
+		500740181EA0B29800BA1457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508273801E9FAB70003725EA /* Main.storyboard */; };
+		5007402F1EA0B34600BA1457 /* MockSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007402E1EA0B34600BA1457 /* MockSessionProvider.swift */; };
+		500740321EA0B3E600BA1457 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500740311EA0B3E600BA1457 /* NetworkManagerTests.swift */; };
+		503EF62F1EA0CFEF008AB2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503EF62E1EA0CFEF008AB2BD /* AppDelegate.swift */; };
+		503EF6311EA0D387008AB2BD /* forecastRawJustBody.json in Resources */ = {isa = PBXBuildFile; fileRef = 50977D681E9FC8B800640146 /* forecastRawJustBody.json */; };
+		5082737B1E9FAB70003725EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082737A1E9FAB70003725EA /* AppDelegate.swift */; };
+		508273821E9FAB70003725EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508273801E9FAB70003725EA /* Main.storyboard */; };
+		508273841E9FAB70003725EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508273831E9FAB70003725EA /* Assets.xcassets */; };
+		508273871E9FAB70003725EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508273851E9FAB70003725EA /* LaunchScreen.storyboard */; };
+		5084B6E61E9FCB7E00D074E7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E51E9FCB7E00D074E7 /* Weather.swift */; };
+		5084B6E81E9FCB8F00D074E7 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E71E9FCB8F00D074E7 /* Forecast.swift */; };
+		5084B6EA1E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6E91E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift */; };
+		5084B6EC1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6EB1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift */; };
+		5084B6EE1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6ED1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift */; };
+		5084B6F11E9FCC4000D074E7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F01E9FCC4000D074E7 /* NetworkManager.swift */; };
+		5084B6F31E9FCC5A00D074E7 /* NetworkRequestsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F21E9FCC5A00D074E7 /* NetworkRequestsProvider.swift */; };
+		5084B6F51E9FCC6C00D074E7 /* NetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F41E9FCC6C00D074E7 /* NetworkResponseParser.swift */; };
+		5084B6F71E9FCC7800D074E7 /* NetworkSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F61E9FCC7800D074E7 /* NetworkSessionProvider.swift */; };
+		5084B6F91E9FCE7200D074E7 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6F81E9FCE7200D074E7 /* WindDirection.swift */; };
+		5084B6FB1E9FD0CB00D074E7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084B6FA1E9FD0CB00D074E7 /* City.swift */; };
+		50977D6E1E9FC9C700640146 /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D6D1E9FC9C700640146 /* ForecastVC.swift */; };
+		50977D741E9FCA7700640146 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D721E9FCA7700640146 /* ForecastCell.swift */; };
+		50977D751E9FCA7700640146 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50977D731E9FCA7700640146 /* ForecastCell.xib */; };
+		50977D771E9FCAD200640146 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50977D761E9FCAD200640146 /* NetworkManagerProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		500740291EA0B30900BA1457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5082736F1E9FAB70003725EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50073FFF1EA0B29800BA1457;
+			remoteInfo = WelcomeToAcapulcoForTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17704741E96EB6B176771AA1 /* Pods_WelcomeToAcapulco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelcomeToAcapulco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17973F47821A86F2A2889AD3 /* Pods-WelcomeToAcapulco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeToAcapulco.release.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco.release.xcconfig"; sourceTree = "<group>"; };
+		50073FDE1EA011D800BA1457 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		50073FE41EA0ACEA00BA1457 /* LogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50073FE81EA0ACEA00BA1457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50073FEC1EA0AD4400BA1457 /* WindDirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindDirectionTests.swift; sourceTree = "<group>"; };
+		5007401E1EA0B29800BA1457 /* WelcomeToAcapulcoForTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeToAcapulcoForTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5007401F1EA0B29800BA1457 /* WelcomeToAcapulco copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WelcomeToAcapulco copy-Info.plist"; path = "/Users/Max/Desktop/WelcomeToAcapulco/WelcomeToAcapulco copy-Info.plist"; sourceTree = "<absolute>"; };
+		500740241EA0B30900BA1457 /* WelcomeToAcapulcoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WelcomeToAcapulcoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		500740281EA0B30900BA1457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5007402E1EA0B34600BA1457 /* MockSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionProvider.swift; sourceTree = "<group>"; };
+		500740311EA0B3E600BA1457 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		503EF62E1EA0CFEF008AB2BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		508273771E9FAB70003725EA /* WelcomeToAcapulco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeToAcapulco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5082737A1E9FAB70003725EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		508273811E9FAB70003725EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		508273831E9FAB70003725EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		508273861E9FAB70003725EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		508273881E9FAB70003725EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5084B6E51E9FCB7E00D074E7 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		5084B6E71E9FCB8F00D074E7 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		5084B6E91E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionProviderProtocol.swift; sourceTree = "<group>"; };
+		5084B6EB1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseParserProtocol.swift; sourceTree = "<group>"; };
+		5084B6ED1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestsProviderProtocol.swift; sourceTree = "<group>"; };
+		5084B6F01E9FCC4000D074E7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5084B6F21E9FCC5A00D074E7 /* NetworkRequestsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestsProvider.swift; sourceTree = "<group>"; };
+		5084B6F41E9FCC6C00D074E7 /* NetworkResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseParser.swift; sourceTree = "<group>"; };
+		5084B6F61E9FCC7800D074E7 /* NetworkSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionProvider.swift; sourceTree = "<group>"; };
+		5084B6F81E9FCE7200D074E7 /* WindDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
+		5084B6FA1E9FD0CB00D074E7 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		50977D651E9FC8B800640146 /* calls.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = calls.txt; sourceTree = "<group>"; };
+		50977D661E9FC8B800640146 /* callsToOpenWeather.chls */ = {isa = PBXFileReference; lastKnownFileType = file; path = callsToOpenWeather.chls; sourceTree = "<group>"; };
+		50977D671E9FC8B800640146 /* forecastPretty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecastPretty.json; sourceTree = "<group>"; };
+		50977D681E9FC8B800640146 /* forecastRawJustBody.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecastRawJustBody.json; sourceTree = "<group>"; };
+		50977D691E9FC8B800640146 /* forecastRawWithHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecastRawWithHeader.json; sourceTree = "<group>"; };
+		50977D6A1E9FC8B800640146 /* weatherPretty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherPretty.json; sourceTree = "<group>"; };
+		50977D6B1E9FC8B800640146 /* weatherRawJustBody.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherRawJustBody.json; sourceTree = "<group>"; };
+		50977D6C1E9FC8B800640146 /* weatherRawWithHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherRawWithHeader.json; sourceTree = "<group>"; };
+		50977D6D1E9FC9C700640146 /* ForecastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
+		50977D721E9FCA7700640146 /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		50977D731E9FCA7700640146 /* ForecastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCell.xib; sourceTree = "<group>"; };
+		50977D761E9FCAD200640146 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		C19B92C799EFD1E259A5301D /* Pods-WelcomeToAcapulco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeToAcapulco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50073FE11EA0ACEA00BA1457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740121EA0B29800BA1457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500740131EA0B29800BA1457 /* Pods_WelcomeToAcapulco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740211EA0B30900BA1457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508273741E9FAB70003725EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4316209AA5815EB810642D2C /* Pods_WelcomeToAcapulco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5005199A1E9FB31C0048427D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50073FDE1EA011D800BA1457 /* HomeVC.swift */,
+				50977D6D1E9FC9C700640146 /* ForecastVC.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		50073FE51EA0ACEA00BA1457 /* LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				50073FEC1EA0AD4400BA1457 /* WindDirectionTests.swift */,
+				50073FE81EA0ACEA00BA1457 /* Info.plist */,
+			);
+			path = LogicTests;
+			sourceTree = "<group>";
+		};
+		500740251EA0B30900BA1457 /* WelcomeToAcapulcoTests */ = {
+			isa = PBXGroup;
+			children = (
+				500740311EA0B3E600BA1457 /* NetworkManagerTests.swift */,
+				500740301EA0B35200BA1457 /* Mocks */,
+				500740281EA0B30900BA1457 /* Info.plist */,
+				503EF62E1EA0CFEF008AB2BD /* AppDelegate.swift */,
+			);
+			path = WelcomeToAcapulcoTests;
+			sourceTree = "<group>";
+		};
+		500740301EA0B35200BA1457 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5007402E1EA0B34600BA1457 /* MockSessionProvider.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		5082736E1E9FAB70003725EA = {
+			isa = PBXGroup;
+			children = (
+				508273791E9FAB70003725EA /* WelcomeToAcapulco */,
+				50073FE51EA0ACEA00BA1457 /* LogicTests */,
+				500740251EA0B30900BA1457 /* WelcomeToAcapulcoTests */,
+				508273781E9FAB70003725EA /* Products */,
+				9B42DEFBB406028419EAAE41 /* Pods */,
+				553715F9AFD230CB05B89E44 /* Frameworks */,
+				5007401F1EA0B29800BA1457 /* WelcomeToAcapulco copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		508273781E9FAB70003725EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508273771E9FAB70003725EA /* WelcomeToAcapulco.app */,
+				50073FE41EA0ACEA00BA1457 /* LogicTests.xctest */,
+				5007401E1EA0B29800BA1457 /* WelcomeToAcapulcoForTests.app */,
+				500740241EA0B30900BA1457 /* WelcomeToAcapulcoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		508273791E9FAB70003725EA /* WelcomeToAcapulco */ = {
+			isa = PBXGroup;
+			children = (
+				5082737A1E9FAB70003725EA /* AppDelegate.swift */,
+				508273801E9FAB70003725EA /* Main.storyboard */,
+				50977D6F1E9FCA1700640146 /* Cells */,
+				5084B6EF1E9FCC2E00D074E7 /* Controllers */,
+				5084B6E41E9FCB5100D074E7 /* Model */,
+				50977D631E9FBF0E00640146 /* Protocols */,
+				5005199A1E9FB31C0048427D /* View Controllers */,
+				508273831E9FAB70003725EA /* Assets.xcassets */,
+				508273851E9FAB70003725EA /* LaunchScreen.storyboard */,
+				508273881E9FAB70003725EA /* Info.plist */,
+				50977D641E9FC8B800640146 /* Network responses */,
+			);
+			path = WelcomeToAcapulco;
+			sourceTree = "<group>";
+		};
+		5084B6E41E9FCB5100D074E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5084B6FA1E9FD0CB00D074E7 /* City.swift */,
+				5084B6E71E9FCB8F00D074E7 /* Forecast.swift */,
+				5084B6E51E9FCB7E00D074E7 /* Weather.swift */,
+				5084B6F81E9FCE7200D074E7 /* WindDirection.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5084B6EF1E9FCC2E00D074E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5084B6F01E9FCC4000D074E7 /* NetworkManager.swift */,
+				5084B6F21E9FCC5A00D074E7 /* NetworkRequestsProvider.swift */,
+				5084B6F41E9FCC6C00D074E7 /* NetworkResponseParser.swift */,
+				5084B6F61E9FCC7800D074E7 /* NetworkSessionProvider.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		50977D631E9FBF0E00640146 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50977D761E9FCAD200640146 /* NetworkManagerProtocol.swift */,
+				5084B6ED1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift */,
+				5084B6EB1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift */,
+				5084B6E91E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		50977D641E9FC8B800640146 /* Network responses */ = {
+			isa = PBXGroup;
+			children = (
+				50977D651E9FC8B800640146 /* calls.txt */,
+				50977D661E9FC8B800640146 /* callsToOpenWeather.chls */,
+				50977D671E9FC8B800640146 /* forecastPretty.json */,
+				50977D681E9FC8B800640146 /* forecastRawJustBody.json */,
+				50977D691E9FC8B800640146 /* forecastRawWithHeader.json */,
+				50977D6A1E9FC8B800640146 /* weatherPretty.json */,
+				50977D6B1E9FC8B800640146 /* weatherRawJustBody.json */,
+				50977D6C1E9FC8B800640146 /* weatherRawWithHeader.json */,
+			);
+			name = "Network responses";
+			path = networkResponses;
+			sourceTree = "<group>";
+		};
+		50977D6F1E9FCA1700640146 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				50977D721E9FCA7700640146 /* ForecastCell.swift */,
+				50977D731E9FCA7700640146 /* ForecastCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		553715F9AFD230CB05B89E44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17704741E96EB6B176771AA1 /* Pods_WelcomeToAcapulco.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B42DEFBB406028419EAAE41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C19B92C799EFD1E259A5301D /* Pods-WelcomeToAcapulco.debug.xcconfig */,
+				17973F47821A86F2A2889AD3 /* Pods-WelcomeToAcapulco.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50073FE31EA0ACEA00BA1457 /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50073FEB1EA0ACEA00BA1457 /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				50073FE01EA0ACEA00BA1457 /* Sources */,
+				50073FE11EA0ACEA00BA1457 /* Frameworks */,
+				50073FE21EA0ACEA00BA1457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = 50073FE41EA0ACEA00BA1457 /* LogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50073FFF1EA0B29800BA1457 /* WelcomeToAcapulcoForTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5007401B1EA0B29800BA1457 /* Build configuration list for PBXNativeTarget "WelcomeToAcapulcoForTests" */;
+			buildPhases = (
+				500740001EA0B29800BA1457 /* [CP] Check Pods Manifest.lock */,
+				500740011EA0B29800BA1457 /* Sources */,
+				500740121EA0B29800BA1457 /* Frameworks */,
+				500740141EA0B29800BA1457 /* Resources */,
+				500740191EA0B29800BA1457 /* [CP] Embed Pods Frameworks */,
+				5007401A1EA0B29800BA1457 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WelcomeToAcapulcoForTests;
+			productName = WelcomeToAcapulco;
+			productReference = 5007401E1EA0B29800BA1457 /* WelcomeToAcapulcoForTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500740231EA0B30900BA1457 /* WelcomeToAcapulcoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5007402B1EA0B30900BA1457 /* Build configuration list for PBXNativeTarget "WelcomeToAcapulcoTests" */;
+			buildPhases = (
+				500740201EA0B30900BA1457 /* Sources */,
+				500740211EA0B30900BA1457 /* Frameworks */,
+				500740221EA0B30900BA1457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5007402A1EA0B30900BA1457 /* PBXTargetDependency */,
+			);
+			name = WelcomeToAcapulcoTests;
+			productName = WelcomeToAcapulcoTests;
+			productReference = 500740241EA0B30900BA1457 /* WelcomeToAcapulcoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		508273761E9FAB70003725EA /* WelcomeToAcapulco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5082738B1E9FAB70003725EA /* Build configuration list for PBXNativeTarget "WelcomeToAcapulco" */;
+			buildPhases = (
+				AEB4DE83705688428499AD60 /* [CP] Check Pods Manifest.lock */,
+				508273731E9FAB70003725EA /* Sources */,
+				508273741E9FAB70003725EA /* Frameworks */,
+				508273751E9FAB70003725EA /* Resources */,
+				29D87F9F2F1698F07ABB9413 /* [CP] Embed Pods Frameworks */,
+				DA2A8C2839D8157A4AF9A9FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WelcomeToAcapulco;
+			productName = WelcomeToAcapulco;
+			productReference = 508273771E9FAB70003725EA /* WelcomeToAcapulco.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5082736F1E9FAB70003725EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "f-max";
+				TargetAttributes = {
+					50073FE31EA0ACEA00BA1457 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					50073FFF1EA0B29800BA1457 = {
+						DevelopmentTeam = BZ4FCWBTQZ;
+					};
+					500740231EA0B30900BA1457 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50073FFF1EA0B29800BA1457;
+					};
+					508273761E9FAB70003725EA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BZ4FCWBTQZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 508273721E9FAB70003725EA /* Build configuration list for PBXProject "WelcomeToAcapulco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5082736E1E9FAB70003725EA;
+			productRefGroup = 508273781E9FAB70003725EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508273761E9FAB70003725EA /* WelcomeToAcapulco */,
+				50073FFF1EA0B29800BA1457 /* WelcomeToAcapulcoForTests */,
+				50073FE31EA0ACEA00BA1457 /* LogicTests */,
+				500740231EA0B30900BA1457 /* WelcomeToAcapulcoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50073FE21EA0ACEA00BA1457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740141EA0B29800BA1457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500740151EA0B29800BA1457 /* ForecastCell.xib in Resources */,
+				500740161EA0B29800BA1457 /* LaunchScreen.storyboard in Resources */,
+				500740171EA0B29800BA1457 /* Assets.xcassets in Resources */,
+				503EF6311EA0D387008AB2BD /* forecastRawJustBody.json in Resources */,
+				500740181EA0B29800BA1457 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740221EA0B30900BA1457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508273751E9FAB70003725EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50977D751E9FCA7700640146 /* ForecastCell.xib in Resources */,
+				508273871E9FAB70003725EA /* LaunchScreen.storyboard in Resources */,
+				508273841E9FAB70003725EA /* Assets.xcassets in Resources */,
+				508273821E9FAB70003725EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29D87F9F2F1698F07ABB9413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500740001EA0B29800BA1457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		500740191EA0B29800BA1457 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5007401A1EA0B29800BA1457 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB4DE83705688428499AD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2A8C2839D8157A4AF9A9FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelcomeToAcapulco/Pods-WelcomeToAcapulco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50073FE01EA0ACEA00BA1457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50073FED1EA0AD4400BA1457 /* WindDirectionTests.swift in Sources */,
+				50073FEE1EA0AD5900BA1457 /* WindDirection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740011EA0B29800BA1457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500740021EA0B29800BA1457 /* ForecastCell.swift in Sources */,
+				500740041EA0B29800BA1457 /* NetworkSessionProviderProtocol.swift in Sources */,
+				500740051EA0B29800BA1457 /* NetworkRequestsProviderProtocol.swift in Sources */,
+				5007402F1EA0B34600BA1457 /* MockSessionProvider.swift in Sources */,
+				500740061EA0B29800BA1457 /* NetworkManager.swift in Sources */,
+				500740071EA0B29800BA1457 /* Forecast.swift in Sources */,
+				500740081EA0B29800BA1457 /* NetworkResponseParser.swift in Sources */,
+				500740091EA0B29800BA1457 /* WindDirection.swift in Sources */,
+				5007400A1EA0B29800BA1457 /* ForecastVC.swift in Sources */,
+				5007400B1EA0B29800BA1457 /* HomeVC.swift in Sources */,
+				5007400C1EA0B29800BA1457 /* NetworkManagerProtocol.swift in Sources */,
+				5007400D1EA0B29800BA1457 /* Weather.swift in Sources */,
+				5007400E1EA0B29800BA1457 /* City.swift in Sources */,
+				5007400F1EA0B29800BA1457 /* NetworkSessionProvider.swift in Sources */,
+				500740101EA0B29800BA1457 /* NetworkRequestsProvider.swift in Sources */,
+				503EF62F1EA0CFEF008AB2BD /* AppDelegate.swift in Sources */,
+				500740111EA0B29800BA1457 /* NetworkResponseParserProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500740201EA0B30900BA1457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500740321EA0B3E600BA1457 /* NetworkManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508273731E9FAB70003725EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50977D741E9FCA7700640146 /* ForecastCell.swift in Sources */,
+				5082737B1E9FAB70003725EA /* AppDelegate.swift in Sources */,
+				5084B6EA1E9FCBC500D074E7 /* NetworkSessionProviderProtocol.swift in Sources */,
+				5084B6EE1E9FCC0A00D074E7 /* NetworkRequestsProviderProtocol.swift in Sources */,
+				5084B6F11E9FCC4000D074E7 /* NetworkManager.swift in Sources */,
+				5084B6E81E9FCB8F00D074E7 /* Forecast.swift in Sources */,
+				5084B6F51E9FCC6C00D074E7 /* NetworkResponseParser.swift in Sources */,
+				5084B6F91E9FCE7200D074E7 /* WindDirection.swift in Sources */,
+				50977D6E1E9FC9C700640146 /* ForecastVC.swift in Sources */,
+				50073FDF1EA011D800BA1457 /* HomeVC.swift in Sources */,
+				50977D771E9FCAD200640146 /* NetworkManagerProtocol.swift in Sources */,
+				5084B6E61E9FCB7E00D074E7 /* Weather.swift in Sources */,
+				5084B6FB1E9FD0CB00D074E7 /* City.swift in Sources */,
+				5084B6F71E9FCC7800D074E7 /* NetworkSessionProvider.swift in Sources */,
+				5084B6F31E9FCC5A00D074E7 /* NetworkRequestsProvider.swift in Sources */,
+				5084B6EC1E9FCBF000D074E7 /* NetworkResponseParserProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5007402A1EA0B30900BA1457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50073FFF1EA0B29800BA1457 /* WelcomeToAcapulcoForTests */;
+			targetProxy = 500740291EA0B30900BA1457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		508273801E9FAB70003725EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508273811E9FAB70003725EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		508273851E9FAB70003725EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508273861E9FAB70003725EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50073FE91EA0ACEA00BA1457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.LogicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		50073FEA1EA0ACEA00BA1457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.LogicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5007401C1EA0B29800BA1457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19B92C799EFD1E259A5301D /* Pods-WelcomeToAcapulco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ4FCWBTQZ;
+				INFOPLIST_FILE = "WelcomeToAcapulco copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5007401D1EA0B29800BA1457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17973F47821A86F2A2889AD3 /* Pods-WelcomeToAcapulco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ4FCWBTQZ;
+				INFOPLIST_FILE = "WelcomeToAcapulco copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5007402C1EA0B30900BA1457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WelcomeToAcapulcoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulcoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WelcomeToAcapulcoForTests.app/WelcomeToAcapulcoForTests";
+			};
+			name = Debug;
+		};
+		5007402D1EA0B30900BA1457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WelcomeToAcapulcoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulcoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WelcomeToAcapulcoForTests.app/WelcomeToAcapulcoForTests";
+			};
+			name = Release;
+		};
+		508273891E9FAB70003725EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5082738A1E9FAB70003725EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5082738C1E9FAB70003725EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19B92C799EFD1E259A5301D /* Pods-WelcomeToAcapulco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ4FCWBTQZ;
+				INFOPLIST_FILE = WelcomeToAcapulco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5082738D1E9FAB70003725EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17973F47821A86F2A2889AD3 /* Pods-WelcomeToAcapulco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ4FCWBTQZ;
+				INFOPLIST_FILE = WelcomeToAcapulco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "f-max.WelcomeToAcapulco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50073FEB1EA0ACEA00BA1457 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50073FE91EA0ACEA00BA1457 /* Debug */,
+				50073FEA1EA0ACEA00BA1457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5007401B1EA0B29800BA1457 /* Build configuration list for PBXNativeTarget "WelcomeToAcapulcoForTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5007401C1EA0B29800BA1457 /* Debug */,
+				5007401D1EA0B29800BA1457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5007402B1EA0B30900BA1457 /* Build configuration list for PBXNativeTarget "WelcomeToAcapulcoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5007402C1EA0B30900BA1457 /* Debug */,
+				5007402D1EA0B30900BA1457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508273721E9FAB70003725EA /* Build configuration list for PBXProject "WelcomeToAcapulco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508273891E9FAB70003725EA /* Debug */,
+				5082738A1E9FAB70003725EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5082738B1E9FAB70003725EA /* Build configuration list for PBXNativeTarget "WelcomeToAcapulco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5082738C1E9FAB70003725EA /* Debug */,
+				5082738D1E9FAB70003725EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5082736F1E9FAB70003725EA /* Project object */;
+}
